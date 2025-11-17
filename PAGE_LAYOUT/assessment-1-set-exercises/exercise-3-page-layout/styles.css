@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+nav a {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Intro section: text left, cow image right */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.text-block {
+  width: 55%;
+}
+.cow-block {
+  width: 35%;
+  text-align: center;
+}
+.cow-block img {
+  width: ;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.cow-block p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Video + Image in same line */
+.media-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 20px;
+}
+.media-row .video,
+.media-row .image {
+  flex: 1;
+}
+.media-row video,
+.media-row img {
+  width: stretch;
+  height: 350px;
+  display: flexbox;
+  object-fit: cover;
+}
+
+/* Gallery grid below */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 0;
+  gap: 0;
+  grid-row: 0;
+  align-items: stretch;
+}
+.gallery img {
+  width: stretch;
+  display: flexbox;
+  object-fit: stretch;
+  height: 350px;
+  gap:0, 0;
+  
+}
